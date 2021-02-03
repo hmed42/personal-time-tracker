@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    div.display-4 {
+        font-size: 40px;
+    } 
+}
+
+@media screen and (max-width: 488px) {
+    div.display-4 {
+        font-size: 30px;
+    } 
+}
+
+.btn-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    /* Reference for code below: https://stackoverflow.com/questions/21386306/css-always-on-top/21386429 */
+    z-index: 999;
+}
+
+body {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+div.page-name {
+    background-color: rgb(250, 240, 225);
+    border-bottom: 1px solid black;
+    padding: 30px;
+}

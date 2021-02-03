@@ -1,0 +1,21 @@
+.btn-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    filter: invert(100%);
+    z-index: 999;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    color: blanchedalmond;
+}
+
+div.page-name {
+    background-color: rgb(77, 77, 77);
+    color: blanchedalmond;
+    border-bottom: 1px solid white;
+    padding: 30px;
+}
