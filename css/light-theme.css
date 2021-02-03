@@ -21,6 +21,24 @@
     z-index: 999;
 }
 
+.btn-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+}
+
+.btn-2 {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.btn-holder {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 body {
     background-color: blanchedalmond;
     color: black;
@@ -30,4 +48,42 @@ div.page-name {
     background-color: rgb(250, 240, 225);
     border-bottom: 1px solid black;
     padding: 30px;
+}
+
+footer {
+    background-color: rgb(250, 240, 225);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding-top: 5px;;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.timer {
+    padding: 100px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    animation: myAnimation 1s infinite;
+}
+
+@keyframes myAnimation {
+    0% {
+        font-stretch: extra-expanded;
+        font-size: 66px;
+        color: burlywood;
+    }
+    50% {
+        font-stretch: ultra-condensed; 
+        font-size: 69px;
+        color: crimson;
+    }
+    100% {
+        font-stretch: extra-expanded;
+        font-size: 66px;
+        color: burlywood;
+    }
 }

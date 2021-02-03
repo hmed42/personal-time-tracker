@@ -6,14 +6,19 @@ const theme = document.querySelector("#theme-link");
 
 // Listen for a click on the button
 btn.addEventListener("click", function () {
-    // If the current URL contains "ligh-theme.css"
     if (theme.getAttribute("href") == "css/light-theme.css") {
-        // ... then switch it to "dark-theme.css"
         theme.href = "css/dark-theme.css";
-        // Otherwise...
+        Cookies.set('themeMode', 'dark', { expires: 7 });
     } else {
-        // ... switch it to "light-theme.css"
         theme.href = "css/light-theme.css";
+        Cookies.set('themeMode', 'light', { expires: 7 });
     }
 });
 
+console.log(Cookies.get('themeMode'));
+
+if (Cookies.get('themeMode')== 'light') {
+    theme.href = "css/light-theme.css";
+} else {
+    theme.href = "css/dark-theme.css";
+}
